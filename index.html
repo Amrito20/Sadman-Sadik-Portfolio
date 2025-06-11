@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadman Sadik - Research Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">Sadman Sadik</a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#research" class="nav-link">Research</a></li>
+                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#timeline-section" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Particles.js Background -->
+        <div id="particles-js"></div>
+        
+        <!-- Lightweight CSS Background Animation -->
+        <div class="background-animation">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="greeting" data-aos="fade-up">
+                        <span class="greeting-text">I'm Sadman Sadik</span>
+                    </div>
+                    
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                        <span class="typed-text">Research Enthusiast</span>
+                    </h1>
+                    
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                        A passionate Leather Engineering student dedicated to advancing research in water engineering, chemical engineering, waste management, and machine learning applications for environmental sustainability.
+                    </p>
+                    
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#about" class="hero-btn btn-primary">
+                            <i class="fas fa-user"></i>
+                            About Me
+                        </a>
+                        <a href="assets/cv/Sadman%20SADIK%20CV%20.pdf" download class="hero-btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                    
+                    <div class="social-links-hero">
+                        <a href="https://www.linkedin.com/in/sadman-sadik-csca%E2%84%A2-83433a1b1/" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <!-- TODO: Add Sadman's GitHub link here -->
+                        <a href="###" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sadmansadik.shovon.7" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Sadman-Sadik" target="_blank" class="social-link researchgate">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="image-container" id="heroImage">
+                        <!-- Image will load or show placeholder -->
+                        <img src="assets/images/Sadman%20in%20formal%20Image%201.jpg" alt="Sadman Sadik" id="profileImage" 
+                             onload="this.style.display='block'" 
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display:none; justify-content:center; align-items:center; width:100%; height:100%; background: linear-gradient(135deg, var(--primary-purple), var(--accent-green)); border-radius:50%;">
+                            <i class="fas fa-user-circle" style="font-size: 8rem; color: rgba(255,255,255,0.8);"></i>
+                        </div>
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Slider Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Journey Timeline</h2>
+                <p>Moments from my academic and professional journey</p>
+            </div>
+            
+            <div class="gallery-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="slider-container">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="slide">
+                            <img src="assets/gallery/Team%20Kilo%20Flight%20in%20Japan%20Sadman%20with%20Bangladesh%20Flag%20.jpg" alt="Team Kilo Flight in Japan with Bangladesh Flag">
+                            <div class="slide-caption">Team Kilo Flight - Formula SAE Japan 2023</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/Team%20Kilo%20Flight%20in%20Japan%202.jpg" alt="Team Kilo Flight in Japan">
+                            <div class="slide-caption">Formula Student Racing Competition</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/Team%20Kilo%20Flight%20in%20Japan.jpg" alt="Team Kilo Flight Group">
+                            <div class="slide-caption">International Racing Team Experience</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/Team%20Kilo%20Flight%20.jpg" alt="Team Kilo Flight">
+                            <div class="slide-caption">Formula SAE Team Collaboration</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/WhatsApp%20Image%202025-06-11%20at%2000.22.49_75142cbc.jpg" alt="Academic Achievement">
+                            <div class="slide-caption">Academic Excellence Recognition</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/WhatsApp%20Image%202025-06-11%20at%2000.22.49_68e12031.jpg" alt="Research Presentation">
+                            <div class="slide-caption">Research Presentation Event</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/WhatsApp%20Image%202025-06-11%20at%2000.22.51_7565df7a.jpg" alt="University Life">
+                            <div class="slide-caption">University Life and Leadership</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/WhatsApp%20Image%202025-06-11%20at%2000.22.51_6921804c.jpg" alt="Professional Development">
+                            <div class="slide-caption">Professional Development Activities</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/WhatsApp%20Image%202025-06-11%20at%2000.22.52_1bb75913.jpg" alt="Conference Participation">
+                            <div class="slide-caption">Conference and Networking</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/WhatsApp%20Image%202025-06-11%20at%2000.22.52_5a18ce4d.jpg" alt="Research Work">
+                            <div class="slide-caption">Research and Innovation</div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/gallery/WhatsApp%20Image%202025-06-11%20at%2000.22.52_8917ca21.jpg" alt="Team Collaboration">
+                            <div class="slide-caption">Team Collaboration and Leadership</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p>Get to know more about my background, education, and journey</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-info">
+                        <h3>Hello! I'm Sadman Sadik</h3>
+                        <p>I am a dedicated Leather Engineering student at Khulna University of Engineering and Technology, passionate about advancing research in water engineering, chemical engineering, waste management, and machine learning applications for environmental sustainability.</p>
+                        
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>Bachelor of Science in Leather Engineering<br>
+                                    <strong>Khulna University of Engineering and Technology</strong><br>
+                                    CGPA: 3.32/4.00 (Till 7th semester) - Top 10% of class</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Khulna University of Engineering and Technology<br>Khulna-9203, Bangladesh</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>sadmansdk@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>(+880)1781838853</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="about-description">
+                            My journey in leather engineering has been driven by a passion for environmental sustainability and innovative waste management solutions. 
+                            I've actively engaged in research, leadership, and teaching, building a strong foundation in both technical expertise and soft skills. 
+                            Through various leadership positions and research projects, I've developed a comprehensive understanding of leather engineering applications in 
+                            environmental sustainability, focusing on waste-to-wealth technologies and pollution control.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="about-images-slider" id="aboutImagesSlider">
+                        <div class="about-image-container">
+                            <img src="assets/images/Sadman%20in%20formal%20Image%201.jpg" alt="Sadman Sadik" class="about-profile-img active">
+                            <img src="assets/images/Sadman%20Sadik%20image%202.jpg" alt="Sadman Sadik" class="about-profile-img">
+                            <img src="assets/images/Sadman%20Formal%20Dress%20image%203.jpg" alt="Sadman Sadik" class="about-profile-img">
+                            <img src="assets/images/Sadman%20Fomal%20dress%20with%20crest%20in%20hand%20image%204.jpg" alt="Sadman Sadik" class="about-profile-img">
+                            <img src="assets/images/Sadman%20with%20Mic%20image%205.jpg" alt="Sadman Sadik" class="about-profile-img">
+                            <img src="assets/images/Sadman%20image%206.jpg" alt="Sadman Sadik" class="about-profile-img">
+                            <img src="assets/images/Sadman%20with%20mic%20image%207.jpg" alt="Sadman Sadik" class="about-profile-img">
+                        </div>
+                        <div class="about-image-dots">
+                            <span class="about-dot active" data-slide="0"></span>
+                            <span class="about-dot" data-slide="1"></span>
+                            <span class="about-dot" data-slide="2"></span>
+                            <span class="about-dot" data-slide="3"></span>
+                            <span class="about-dot" data-slide="4"></span>
+                            <span class="about-dot" data-slide="5"></span>
+                            <span class="about-dot" data-slide="6"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Research & Publications</h2>
+                <p>My research interests and published work in engineering and environmental science</p>
+            </div>
+            
+            <div class="research-content">
+                <div class="research-interests" data-aos="fade-up" data-aos-duration="800">
+                    <h3>Research Interests</h3>
+                    <div class="research-categories">
+                        <div class="research-category">
+                            <div class="category-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h4>Water Engineering</h4>
+                            <ul>
+                                <li>Treatment process optimization</li>
+                                <li>Heavy metal removal</li>
+                                <li>Parameter control</li>
+                                <li>Wastewater treatment systems</li>
+                            </ul>
+                        </div>
+                        <div class="research-category">
+                            <div class="category-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h4>Chemical Engineering</h4>
+                            <ul>
+                                <li>Adsorption technology</li>
+                                <li>Bio Fuel development</li>
+                                <li>Bio adsorbent materials</li>
+                                <li>Composite materials</li>
+                            </ul>
+                        </div>
+                        <div class="research-category">
+                            <div class="category-icon">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <h4>Waste Management</h4>
+                            <ul>
+                                <li>Waste to wealth technology</li>
+                                <li>Pollution load control</li>
+                                <li>Sustainable waste solutions</li>
+                                <li>Environmental impact assessment</li>
+                            </ul>
+                        </div>
+                        <div class="research-category">
+                            <div class="category-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Machine Learning</h4>
+                            <ul>
+                                <li>AI applications in environment</li>
+                                <li>ML for water engineering</li>
+                                <li>Deep learning</li>
+                                <li>Neural networks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publications" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <h3>Publications</h3>
+                    <div class="publications-grid">
+                        <div class="publication-card">
+                            <div class="publication-type">
+                                <i class="fas fa-users"></i>
+                                <span>Conference Paper</span>
+                            </div>
+                            <h4>Water Consumption and Conservation Practices Knowledge and Behavioral Pattern Among University Students in Bangladesh</h4>
+                            <p class="publication-description">Research on water conservation awareness and behavioral patterns among university students.</p>
+                            <div class="publication-meta">
+                                <span class="publication-year">2024</span>
+                                <a href="https://www.researchgate.net/publication/391347145_Water_Consumption_and_Conservation_Practices_Knowledge_and_Behavioral_Pattern_Among_University_Students_in_Bangladesh" target="_blank" class="publication-link">View Publication</a>
+                            </div>
+                        </div>
+                        
+                        <div class="publication-card">
+                            <div class="publication-type">
+                                <i class="fas fa-cogs"></i>
+                                <span>Technical Paper</span>
+                            </div>
+                            <h4>Optimize Data Pre-Processing to Enhance the Predictability of Energy Consumption and Effecting Factors in Wastewater Treatment Plant – WWTP</h4>
+                            <p class="publication-description">Data optimization strategies for improving energy consumption predictions in wastewater treatment facilities.</p>
+                            <div class="publication-meta">
+                                <span class="publication-year">2024</span>
+                                <a href="https://www.researchgate.net/publication/391346961_Optimize_Data_Pre-Processing_to_Enhance_the_Predictability_of_Energy_Consumption_and_Effecting_Factors_in_Wastewater_Treatment_Plant_-_WWTP" target="_blank" class="publication-link">View Publication</a>
+                            </div>
+                        </div>
+
+                        <div class="publication-card">
+                            <div class="publication-type">
+                                <i class="fas fa-recycle"></i>
+                                <span>Research Paper</span>
+                    </div>
+                            <h4>Thermally Activated Keratinous Waste to Turbidity Removal from Tannery Wastewater: Waste-to-Waste Treatment Approach</h4>
+                            <p class="publication-description">Innovative approach using keratinous waste for tannery wastewater treatment - a waste-to-waste solution.</p>
+                            <div class="publication-meta">
+                                <span class="publication-year">2024</span>
+                                <a href="https://www.researchgate.net/publication/391347246_Thermally_Activated_Keratinous_Waste_to_Turbidity_Removal_from_Tannery_Wastewater_Waste-to-Waste_Treatment_Approach" target="_blank" class="publication-link">View Publication</a>
+                            </div>
+                        </div>
+
+                        <div class="publication-card">
+                            <div class="publication-type">
+                                <i class="fas fa-brain"></i>
+                                <span>ML Research</span>
+                            </div>
+                            <h4>Industrial Workers' Efficiency in Indian Subcontinent: A Machine Learning Model Approach</h4>
+                            <p class="publication-description">Machine learning applications for analyzing and improving industrial worker efficiency in the Indian subcontinent.</p>
+                            <div class="publication-meta">
+                                <span class="publication-year">2024</span>
+                                <a href="https://www.researchgate.net/publication/387227892_INDUSTRIAL_WORKERS'_EFFICIENCY_IN_INDIAN_SUBCONTINENT_A_MACHINE_LEARNING_MODEL_APPROACH" target="_blank" class="publication-link">View Publication</a>
+                            </div>
+                        </div>
+
+                        <div class="publication-card">
+                            <div class="publication-type">
+                                <i class="fas fa-leaf"></i>
+                                <span>Bio-fuel Research</span>
+                            </div>
+                            <h4>Conversion and Characterization of Bio-Diesel from Tannery Solid Waste</h4>
+                            <p class="publication-description">Sustainable bio-diesel production from tannery solid waste, contributing to circular economy principles.</p>
+                            <div class="publication-meta">
+                                <span class="publication-year">2024</span>
+                                <a href="https://www.researchgate.net/publication/381096428_Conversion_and_Characterization_of_Bio-Diesel_from_Tannery_Solid_Waste" target="_blank" class="publication-link">View Publication</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ongoing-research" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="ongoing-research-title">Ongoing Research Projects</h3>
+                        <div class="ongoing-projects-grid">
+                            <div class="ongoing-project-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="project-icon">
+                                    <i class="fas fa-baby"></i>
+                                </div>
+                                <div class="project-content">
+                                    <h4>Foot Length Growth of Infants in Bangladesh</h4>
+                                    <p>A Machine Learning Approach to predict and analyze infant growth patterns</p>
+                                </div>
+                            </div>
+                            <div class="ongoing-project-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="project-icon">
+                                    <i class="fas fa-water"></i>
+                                </div>
+                                <div class="project-content">
+                                    <h4>Nitrogen Prediction Cycle in Marine Water</h4>
+                                    <p>Forecasting and Machine Learning Model for marine nitrogen cycle prediction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Certificates & Achievements</h2>
+                <p>Professional certifications and course completions</p>
+            </div>
+            
+            <div class="certificates-grid">
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certificate-image" onclick="openCertificateModal('assets/certificates/Certified%20Supply%20Chain%20Analyst%20-%20CSCA%20Certificate.png')">
+                        <img src="assets/certificates/Certified%20Supply%20Chain%20Analyst%20-%20CSCA%20Certificate.png" alt="CSCA Certificate">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>Certified Supply Chain Analyst (CSCA)</h4>
+                        <p>Professional certification in supply chain analysis and management</p>
+                        <div class="certificate-details">
+                            <span class="issuer">ISCEA</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certificate-image" onclick="openCertificateModal('assets/certificates/Quantum%20Mechanics%20by%20University%20of%20Colorado%20Boulder..jpeg')">
+                        <img src="assets/certificates/Quantum%20Mechanics%20by%20University%20of%20Colorado%20Boulder..jpeg" alt="Quantum Mechanics Certificate">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>Quantum Mechanics</h4>
+                        <p>Advanced course in quantum mechanics principles and applications</p>
+                        <div class="certificate-details">
+                            <span class="issuer">University of Colorado Boulder</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certificate-image" onclick="openCertificateModal('assets/certificates/Digital%20Journalism%20by%20Reuters.jpeg')">
+                        <img src="assets/certificates/Digital%20Journalism%20by%20Reuters.jpeg" alt="Digital Journalism Certificate">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>Digital Journalism</h4>
+                        <p>Professional training in digital journalism and media communication</p>
+                        <div class="certificate-details">
+                            <span class="issuer">Reuters</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="certificate-image" onclick="openCertificateModal('assets/certificates/Google%20Sheet%20course%20by%20Google%20Cloud.jpeg')">
+                        <img src="assets/certificates/Google%20Sheet%20course%20by%20Google%20Cloud.jpeg" alt="Google Sheets Certificate">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h4>Google Sheets Advanced Course</h4>
+                        <p>Advanced data analysis and spreadsheet management with Google Sheets</p>
+                        <div class="certificate-details">
+                            <span class="issuer">Google Cloud</span>
+                            <span class="year">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Honors & Scholarships</h2>
+                <p>Recognition and accomplishments in research and academic competitions</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-icon trophy">
+                        <i class="fas fa-trophy"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-rank">Best Research</div>
+                    <h3>ICETSD 2025</h3>
+                    <p>Best Research Presentation Award on ICETSD – 2025 in Jessore, Bangladesh</p>
+                    <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-icon medal">
+                        <i class="fas fa-medal"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-rank">Winner & 70% Scholarship</div>
+                    <h3>ISCEA PTAK Global Supply Chain Case Competition</h3>
+                    <p>Achieved 70% scholarship for CSCA professional certification, 2024</p>
+                    <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="achievement-icon award">
+                        <i class="fas fa-car"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-rank">32nd Position</div>
+                    <h3>Formula SAE at ECOPA Japan 2023</h3>
+                    <p>Business plan presentation secured 32nd position among 77 countries. Car design passed mechanical inspection.</p>
+                    <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="achievement-icon debate">
+                        <i class="fas fa-fire"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-rank">Best Research Award</div>
+                    <h3>Seminar on Leather Engineering, KUET 2023</h3>
+                    <p>Poster presentation: "Fire protective automotive seat leather from orange peel preservation"</p>
+                    <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="achievement-icon championship">
+                        <i class="fas fa-crown"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-rank">Champion</div>
+                    <h3>Professional Skill Test by "Prism KUET"</h3>
+                    <p>Departmental club case competition and office software literacy course, 2022</p>
+                    <div class="achievement-glow"></div>
+                </div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="achievement-icon scholarship">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="achievement-rank">Scholarship</div>
+                    <h3>Technical Scholarship Award</h3>
+                    <p>Received Technical Scholarship Awards in 2022, 2023, and 2024 for academic excellence</p>
+                    <div class="achievement-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="timeline-section" class="timeline-section">
+        <div class="container">
+            <div class="timeline-header" data-aos="fade-up">
+                <h2>Professional Experience</h2>
+                <p>Teaching experience, leadership roles and professional development throughout my academic journey</p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <div class="experience-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="experience-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>10 Minute School</h3>
+                            <span class="position">Chemistry Instructor</span>
+                            <span class="duration">August 2020 - March 2021</span>
+                        </div>
+                        <p>Taught chemistry to 3+ million students on Bangladesh's largest edtech platform during COVID-19. Participated in the "Teach from Home" project, delivering high-quality educational content.</p>
+                        <div class="experience-tags">
+                            <span class="tag">Online Teaching</span>
+                            <span class="tag">Chemistry</span>
+                            <span class="tag">EdTech</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="experience-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Neuronite</h3>
+                            <span class="position">Programming Instructor</span>
+                            <span class="duration">June 2023 - March 2025</span>
+                        </div>
+                        <p>Instructed C and Python programming at departmental programming club. Conducted business case studies and management topics classes for club members.</p>
+                        <div class="experience-tags">
+                            <span class="tag">Programming</span>
+                            <span class="tag">Business Cases</span>
+                            <span class="tag">Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="experience-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>KUET Research Society, LE Unit</h3>
+                            <span class="position">President</span>
+                            <span class="duration">August 2024 - June 2025</span>
+                        </div>
+                        <p>Maintained departmental committee and shared research knowledge. Built networking and facilities for research-interested students in Leather Engineering department.</p>
+                        <div class="experience-tags">
+                            <span class="tag">Research Leadership</span>
+                            <span class="tag">Networking</span>
+                            <span class="tag">Knowledge Sharing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="experience-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Neuronite</h3>
+                            <span class="position">General Secretary</span>
+                            <span class="duration">April 2024 - June 2025</span>
+                        </div>
+                        <p>Maintained overall management of programming and software skill development club. Organized workshops and training sessions for students.</p>
+                        <div class="experience-tags">
+                            <span class="tag">Club Management</span>
+                            <span class="tag">Software Skills</span>
+                            <span class="tag">Organization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item" data-aos="fade-right" data-aos-delay="500">
+                    <div class="experience-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Team KILO FLIGHT</h3>
+                            <span class="position">Sector Lead</span>
+                            <span class="duration">April 2024 - June 2025</span>
+                        </div>
+                        <p>Worked in business and proposal team for Formula Student car project. Managed sponsorships and experienced formula student car manufacturing and assembly processes.</p>
+                        <div class="experience-tags">
+                            <span class="tag">Formula Student</span>
+                            <span class="tag">Sponsorship</span>
+                            <span class="tag">Business Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item" data-aos="fade-left" data-aos-delay="600">
+                    <div class="experience-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>KBEC (Business & Entrepreneurship Club)</h3>
+                            <span class="position">Logistics Secretary</span>
+                            <span class="duration">May 2024 - June 2025</span>
+                        </div>
+                        <p>Organized national level case and idea competitions. Contributed to TEDx KUET as volunteer and worked in content writing section.</p>
+                        <div class="experience-tags">
+                            <span class="tag">Event Logistics</span>
+                            <span class="tag">TEDx</span>
+                            <span class="tag">Content Writing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item" data-aos="fade-right" data-aos-delay="700">
+                    <div class="experience-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>KUET RADIO</h3>
+                            <span class="position">Editing Head</span>
+                            <span class="duration">April 2024 - June 2025</span>
+                        </div>
+                        <p>Campus news sharing and event coverage platform. Managed editing sections and contributed to content quality and production.</p>
+                        <div class="experience-tags">
+                            <span class="tag">Content Editing</span>
+                            <span class="tag">Media Production</span>
+                            <span class="tag">Campus News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item" data-aos="fade-left" data-aos-delay="800">
+                    <div class="experience-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3>Personal Mentoring</h3>
+                            <span class="position">Student Mentor</span>
+                            <span class="duration">2020 - Present</span>
+                        </div>
+                        <p>Mentored 500+ students over the last 5 years in personal and academic problems, providing guidance and support for their development.</p>
+                        <div class="experience-tags">
+                            <span class="tag">Mentoring</span>
+                            <span class="tag">Student Support</span>
+                            <span class="tag">Personal Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Skills & Technologies</h2>
+                <p>Technical skills and tools for engineering research and development</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming & AI</h3>
+                    <p>Programming languages and machine learning for research applications.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C Programming</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Analysis</span>
+                    </div>
+                    <div class="skill-hover-effect"></div>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Research & Laboratory</h3>
+                    <p>Research methodologies and laboratory techniques for engineering applications.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Research Design</span>
+                        <span class="skill-tag">Data Collection</span>
+                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Lab Techniques</span>
+                    </div>
+                    <div class="skill-hover-effect"></div>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Office & Analysis</h3>
+                    <p>Professional tools for documentation, analysis and presentation.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Microsoft Office Suite</span>
+                        <span class="skill-tag">Google Sheets</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Report Writing</span>
+                    </div>
+                    <div class="skill-hover-effect"></div>
+                </div>
+                
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Environmental Engineering</h3>
+                    <p>Sustainable solutions and environmental impact assessment.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Waste Management</span>
+                        <span class="skill-tag">Water Treatment</span>
+                        <span class="skill-tag">Sustainability Assessment</span>
+                        <span class="skill-tag">Environmental Analysis</span>
+                    </div>
+                    <div class="skill-hover-effect"></div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Teaching & Leadership</h3>
+                    <p>Educational delivery and leadership in academic environments.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Chemistry Instruction</span>
+                        <span class="skill-tag">Programming Training</span>
+                        <span class="skill-tag">Student Mentoring</span>
+                        <span class="skill-tag">Team Leadership</span>
+                    </div>
+                    <div class="skill-hover-effect"></div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Supply Chain & Business</h3>
+                    <p>Business analysis and supply chain management expertise.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Supply Chain Analysis</span>
+                        <span class="skill-tag">Business Planning</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Case Studies</span>
+                    </div>
+                    <div class="skill-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content" data-aos="fade-up">
+                <h2>Let's Connect!</h2>
+                <p class="contact-intro-text">Got a question, proposal, or just want to say hello? I'd love to hear from you.</p>
+                
+                <div class="contact-info-grid">
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <a href="mailto:sadmansdk@gmail.com">sadmansdk@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone</h4>
+                        <a href="tel:+8801781838853">(+880)1781838853</a>
+                    </div>
+                    
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Location</h4>
+                        <span>Khulna University of Engineering and Technology<br>Khulna-9203, Bangladesh</span>
+                    </div>
+                </div>
+                
+                <div class="contact-social-section" data-aos="fade-left" data-aos-delay="300">
+                    <div class="social-links-grid">
+                        <h3>Connect With Me</h3>
+                        <div class="social-contact-cards">
+                            <a href="https://www.linkedin.com/in/sadman-sadik-csca%E2%84%A2-83433a1b1/" target="_blank" class="social-contact-card linkedin">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class="social-info">
+                                    <h4>LinkedIn</h4>
+                                    <span>Professional Network</span>
+                                </div>
+                                <div class="social-arrow"><i class="fas fa-arrow-right"></i></div>
+                            </a>
+                            
+                            <a href="###" target="_blank" class="social-contact-card github">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="social-info">
+                                    <h4>GitHub</h4>
+                                    <span>Code Repository</span>
+                                </div>
+                                <div class="social-arrow"><i class="fas fa-arrow-right"></i></div>
+                            </a>
+                            
+                            <a href="https://www.facebook.com/sadmansadik.shovon.7" target="_blank" class="social-contact-card facebook">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="social-info">
+                                    <h4>Facebook</h4>
+                                    <span>Social Updates</span>
+                                </div>
+                                <div class="social-arrow"><i class="fas fa-arrow-right"></i></div>
+                            </a>
+                            
+                            <a href="https://www.researchgate.net/profile/Sadman-Sadik" target="_blank" class="social-contact-card researchgate">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-researchgate"></i>
+                                </div>
+                                <div class="social-info">
+                                    <h4>ResearchGate</h4>
+                                    <span>Academic Publications</span>
+                                </div>
+                                <div class="social-arrow"><i class="fas fa-arrow-right"></i></div>
+                            </a>
+                        </div>
+                        
+                        <div class="cv-download-card">
+                            <div class="cv-icon">
+                                <i class="fas fa-file-download"></i>
+                            </div>
+                            <div class="cv-info">
+                                <h4>Download CV</h4>
+                                <span>Get my latest resume</span>
+                            </div>
+                            <a href="assets/cv/Sadman%20SADIK%20CV%20.pdf" download class="cv-btn-modern">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sadman Sadik. Built with passion for leather engineering and environmental sustainability.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#research">Research</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="certificate-modal">
+        <div class="certificate-modal-content">
+            <span class="certificate-modal-close">&times;</span>
+            <img id="modalCertificateImage" src="" alt="Certificate">
+        </div>
+    </div>
+
+</body>
+</html> 
